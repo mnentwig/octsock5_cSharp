@@ -6,10 +6,7 @@ The included standalone program acts as loopback client that echoes all received
 
 
 ## Performance on reference system ## 
-All numbers are roundtrip.
 
-Throughput: 811 MBytes / second
+Throughput: e.g. 928 MBytes / second on reference system (roundtrip)
 
-latency: 22 microseconds
-
-Note: At the time of writing, the above C# performance is lagging behind the Julia implementation by about a factor of 2.
+latency: e.g. 30 microseconds for a single scalar (roundtrip)
