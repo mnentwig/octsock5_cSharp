@@ -1,6 +1,0 @@
-C:\Users\gk\Dropbox\SVNREPO_octsock5_wc\octsock5_cSharp\bin\Release\csharp.exe.config
-C:\Users\gk\Dropbox\SVNREPO_octsock5_wc\octsock5_cSharp\bin\Release\csharp.exe
-C:\Users\gk\Dropbox\SVNREPO_octsock5_wc\octsock5_cSharp\bin\Release\csharp.pdb
-C:\Users\gk\Dropbox\SVNREPO_octsock5_wc\octsock5_cSharp\obj\Release\csharp.csprojResolveAssemblyReference.cache
-C:\Users\gk\Dropbox\SVNREPO_octsock5_wc\octsock5_cSharp\obj\Release\csharp.exe
-C:\Users\gk\Dropbox\SVNREPO_octsock5_wc\octsock5_cSharp\obj\Release\csharp.pdb
