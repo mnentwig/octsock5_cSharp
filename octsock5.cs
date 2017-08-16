@@ -31,16 +31,47 @@ namespace octsock5 {
         public bool interleavedComplex;
 
         public octsock5Matrix() { }
+        /// <summary>
+        /// wrap real scalar
+        /// </summary>
+        /// <param name="scalar"></param>
         public octsock5Matrix(T scalar) {
             this.colMajorData = new T[1];
             this.colMajorData[0] = scalar;
         }
 
+        /// <summary>
+        /// wrap complex scalar
+        /// </summary>
+        /// <param name="scalarReal">real part</param>
+        /// <param name="scalarImag">imaginary part</param>
         public octsock5Matrix(T scalarReal, T scalarImag) {
             this.colMajorData = new T[2];
             this.colMajorData[0] = scalarReal;
             this.colMajorData[1] = scalarImag;
             this.interleavedComplex = true;
+        }
+
+        /// <summary>
+        /// unwrap real scalar
+        /// </summary>
+        /// <param name="scalar">returns scalar</param>
+        public void unpackScalar(out T scalar) {
+            if(this.dims != null) throw new Exception("not a scalar (matrix wrapper has dims vector)");
+            if(this.interleavedComplex) throw new Exception("value is complex");
+            scalar = this.colMajorData[0];
+        }
+
+        /// <summary>
+        /// unwrap complex scalar
+        /// </summary>
+        /// <param name="scalarReal">returns real part</param>
+        /// <param name="scalarImag">returns imaginary part</param>
+        public void unpackScalar(out T scalarReal, out T scalarImag) {
+            if(this.dims != null) throw new Exception("not a scalar (matrix wrapper has dims vector)");
+            if(!this.interleavedComplex) throw new Exception("value is real");
+            scalarReal = this.colMajorData[0];
+            scalarImag = this.colMajorData[1];
         }
     }
 
