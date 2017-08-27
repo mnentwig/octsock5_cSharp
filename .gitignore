@@ -1,3 +1,6 @@
 *~
-[Bb]in/
-[Oo]bj/
+cSharpEchoServer/[Bb]in/
+cSharpEchoServer/[Oo]bj/
+octsock5dotNet/[Bb]in/
+octsock5dotNet/[Oo]bj/
+*#README.md#
