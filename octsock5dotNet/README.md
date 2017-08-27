@@ -1,8 +1,7 @@
 # Octsock5_cSharp - high speed inter-process data interface #
 
 C# counterpart to Julia octsock5 at https://github.com/mnentwig/octsock5.jl
-
-This standalone program acts as a simple loopback server that echoes all received data back.
+This project compiles into octsock5dotNet.dll.
 
 ## Performance on reference system ## 
 
